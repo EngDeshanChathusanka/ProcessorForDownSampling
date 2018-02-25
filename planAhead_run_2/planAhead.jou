@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Thu Jul 28 15:56:32 2016
+# Process ID: 8036
+# Log file: C:/Users/Chani/Desktop/backup1/Processor/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/Chani/Desktop/backup1/Processor/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Chani/Desktop/backup1/Processor/pa.fromNetlist.tcl

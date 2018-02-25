@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/Users/Chani/Desktop/Processor_first_update/Processor_first_update/ProcessorCore.xst" -ofn "C:/Users/Chani/Desktop/Processor_first_update/Processor_first_update/ProcessorCore.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc TopModule.ucf -p xc6slx45-csg324-3 ProcessorCore.ngc ProcessorCore.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProcessorCore_map.ncd ProcessorCore.ngd ProcessorCore.pcf 
+par -w -intstyle ise -ol high -mt off ProcessorCore_map.ncd ProcessorCore.ncd ProcessorCore.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProcessorCore.twx ProcessorCore.ncd -o ProcessorCore.twr ProcessorCore.pcf -ucf TopModule.ucf 

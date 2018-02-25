@@ -1,0 +1,319 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.26 secs
+ 
+--> Reading design: ProcessorCore.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ProcessorCore.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ProcessorCore"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : ProcessorCore
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\RegPC.v" into library work
+Parsing module <RegPC>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Register.v" into library work
+Parsing module <Register>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\RegEnWrite.v" into library work
+Parsing module <RegEnWrite>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Memory.v" into library work
+Parsing module <Memory>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\InstructionnReg.v" into library work
+Parsing module <InstructionnReg>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\DR.v" into library work
+Parsing module <DR>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Decoder.v" into library work
+Parsing module <Decoder>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Counter.v" into library work
+Parsing module <Counter>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" into library work
+Parsing module <ProcessorCore>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" Line 89: Port finish is not connected to this instance
+
+Elaborating module <ProcessorCore>.
+WARNING:HDLCompiler:872 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" Line 92: Using initial value of Jump since it is never assigned
+
+Elaborating module <Decoder>.
+
+Elaborating module <ALU>.
+
+Elaborating module <RegEnWrite>.
+
+Elaborating module <Register>.
+
+Elaborating module <RegPC>.
+
+Elaborating module <InstructionnReg>.
+
+Elaborating module <DR>.
+
+Elaborating module <Memory>.
+Reading initialization file \"input.txt\".
+WARNING:HDLCompiler:1127 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Memory.v" Line 35: Assignment to finish_reg ignored, since the identifier is never used
+
+Elaborating module <Counter>.
+WARNING:HDLCompiler:1127 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" Line 99: Assignment to unused ignored, since the identifier is never used
+WARNING:HDLCompiler:552 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" Line 89: Input port finish is not connected on this instance
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 67. All outputs of instance <decodeWriteBusA> of block <Decoder> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 69. All outputs of instance <alu> of block <ALU> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 71. All outputs of instance <AC> of block <RegEnWrite> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 72. All outputs of instance <R> of block <Register> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 74. All outputs of instance <PCH> of block <RegPC> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 75. All outputs of instance <PCL> of block <RegPC> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 80. All outputs of instance <MARH> of block <RegPC> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 81. All outputs of instance <MARL> of block <RegPC> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 86. All outputs of instance <IR> of block <InstructionnReg> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 87. All outputs of instance <DR1> of block <DR> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 89. All outputs of instance <RAM> of block <Memory> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 91. All outputs of instance <counter> of block <Counter> are unconnected in block <ProcessorCore>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <ProcessorCore>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v".
+WARNING:Xst:2898 - Port 'finish', unconnected in block instance 'RAM', is tied to GND.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 67: Output port <out2> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 67: Output port <out4> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 67: Output port <out6> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 67: Output port <out7> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 74: Output port <overflowout> of the instance <PCH> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 80: Output port <overflowout> of the instance <MARH> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <ProcessorCore> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ProcessorCore> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ProcessorCore, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : ProcessorCore.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           1
+ Number of bonded IOBs:                   0  out of    218     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.34 secs
+ 
+--> 
+
+Total memory usage is 290600 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

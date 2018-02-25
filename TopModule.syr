@@ -1,0 +1,926 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: TopModule.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TopModule.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TopModule"
+Output Format                      : NGC
+Target Device                      : xc6slx45-3-csg324
+
+---- Source Options
+Top Module Name                    : TopModule
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\RegPC.v" into library work
+Parsing module <RegPC>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Register.v" into library work
+Parsing module <Register>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\RegEnWrite.v" into library work
+Parsing module <RegEnWrite>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\InstructionnReg.v" into library work
+Parsing module <InstructionnReg>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\DR.v" into library work
+Parsing module <DR>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Decoder.v" into library work
+Parsing module <Decoder>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Counter.v" into library work
+Parsing module <Counter>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\uart_tx.v" into library work
+Parsing module <uart_tx>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\uart_rx.v" into library work
+Parsing module <uart_rx>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" into library work
+Parsing module <ProcessorCore>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Memory.v" into library work
+Parsing module <Memory>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\baud_rate_generator.v" into library work
+Parsing module <baud_rate_generator>.
+Analyzing Verilog file "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\TopModule.v" into library work
+Parsing module <TopModule>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\TopModule.v" Line 63: Port q is not connected to this instance
+
+Elaborating module <TopModule>.
+
+Elaborating module <baud_rate_generator>.
+
+Elaborating module <uart_rx>.
+
+Elaborating module <uart_tx>.
+
+Elaborating module <ProcessorCore>.
+WARNING:HDLCompiler:872 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" Line 100: Using initial value of gnd since it is never assigned
+
+Elaborating module <Decoder>.
+
+Elaborating module <ALU>.
+
+Elaborating module <RegEnWrite>.
+
+Elaborating module <Register>.
+
+Elaborating module <RegPC>.
+
+Elaborating module <InstructionnReg>.
+
+Elaborating module <DR>.
+
+Elaborating module <Counter>.
+WARNING:HDLCompiler:1127 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" Line 107: Assignment to unused ignored, since the identifier is never used
+
+Elaborating module <Memory>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <TopModule>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\TopModule.v".
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\TopModule.v" line 63: Output port <q> of the instance <bdg> is unconnected or connected to loadless signal.
+    Found 20-bit register for signal <AddrsIn2>.
+    Found 1-bit register for signal <RoW2>.
+    Found 2-bit register for signal <state_reg>.
+    Found 1-bit register for signal <tx_start>.
+    Found 8-bit register for signal <led>.
+    Found 8-bit register for signal <din>.
+    Found 1-bit register for signal <ProsStart>.
+    Found finite state machine <FSM_0> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | Reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00                                             |
+    | Power Up State     | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit adder for signal <AddrsIn2[19]_GND_1_o_add_22_OUT> created at line 169.
+    Found 20-bit comparator greater for signal <n0004> created at line 121
+    Found 20-bit comparator greater for signal <n0023> created at line 158
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  39 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   8 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <TopModule> synthesized.
+
+Synthesizing Unit <baud_rate_generator>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\baud_rate_generator.v".
+        N = 2
+        M = 4
+    Found 2-bit register for signal <r_reg>.
+    Found 2-bit adder for signal <r_reg[1]_GND_2_o_add_2_OUT> created at line 42.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <baud_rate_generator> synthesized.
+
+Synthesizing Unit <uart_rx>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\uart_rx.v".
+        DBIT = 8
+        SB_TICK = 16
+    Found 4-bit register for signal <s_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 8-bit register for signal <b_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_1> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <n_reg[2]_GND_3_o_add_16_OUT> created at line 92.
+    Found 4-bit adder for signal <s_reg[3]_GND_3_o_add_29_OUT> created at line 104.
+    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 66.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred  11 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_rx> synthesized.
+
+Synthesizing Unit <uart_tx>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\uart_tx.v".
+        DBIT = 8
+        SB_TICK = 16
+    Found 1-bit register for signal <tx_reg>.
+    Found 4-bit register for signal <s_reg>.
+    Found 3-bit register for signal <n_reg>.
+    Found 8-bit register for signal <b_reg>.
+    Found 2-bit register for signal <state_reg>.
+    Found finite state machine <FSM_2> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <n_reg[2]_GND_4_o_add_17_OUT> created at line 110.
+    Found 4-bit adder for signal <s_reg[3]_GND_4_o_add_30_OUT> created at line 125.
+    Found 4-bit 4-to-1 multiplexer for signal <s_next> created at line 75.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred  10 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <uart_tx> synthesized.
+
+Synthesizing Unit <ProcessorCore>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v".
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 75: Output port <out2> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 75: Output port <out4> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 75: Output port <out6> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 75: Output port <out7> of the instance <decodeWriteBusA> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 82: Output port <overflowout> of the instance <PCH> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ProcessorCore.v" line 88: Output port <overflowout> of the instance <MARH> is unconnected or connected to loadless signal.
+    Found 24-bit register for signal <Controller>.
+    Found 1-bit register for signal <Jumpz>.
+    Found 1-bit register for signal <Jumpp>.
+    Found 1-bit register for signal <Jump>.
+    Found 32x24-bit Read Only RAM for signal <_n0202>
+    Found 24-bit 13-to-1 multiplexer for signal <CounterOut[3]_PWR_5_o_wide_mux_113_OUT> created at line 118.
+    Summary:
+	inferred   1 RAM(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <ProcessorCore> synthesized.
+
+Synthesizing Unit <Decoder>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Decoder.v".
+    Summary:
+	no macro.
+Unit <Decoder> synthesized.
+
+Synthesizing Unit <ALU>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\ALU.v".
+    Found 20-bit subtractor for signal <AC[19]_InputBus[19]_sub_6_OUT> created at line 35.
+    Found 20-bit adder for signal <AC[19]_InputBus[19]_add_3_OUT> created at line 34.
+    Found 20-bit adder for signal <AC[19]_GND_8_o_add_8_OUT> created at line 37.
+    Found 20-bit 15-to-1 multiplexer for signal <Z_7_o_InputBus[19]_mux_34_OUT> created at line 32.
+    Found 1-bit tristate buffer for signal <OutputBus<19>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<18>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<17>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<16>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<15>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<14>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<13>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<12>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<11>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<10>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<9>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<8>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<7>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<6>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<5>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<4>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<3>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<2>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<1>> created at line 32
+    Found 1-bit tristate buffer for signal <OutputBus<0>> created at line 32
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  19 Multiplexer(s).
+	inferred  20 Tristate(s).
+Unit <ALU> synthesized.
+
+Synthesizing Unit <RegEnWrite>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\RegEnWrite.v".
+    Found 20-bit register for signal <R>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <RegEnWrite> synthesized.
+
+Synthesizing Unit <Register>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Register.v".
+    Found 20-bit register for signal <R>.
+    Found 1-bit tristate buffer for signal <Rout<19>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<18>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<17>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<16>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<15>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<14>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<13>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<12>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<11>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<10>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<9>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<8>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<7>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<6>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<5>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<4>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<3>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<2>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<1>> created at line 25
+    Found 1-bit tristate buffer for signal <Rout<0>> created at line 25
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred  20 Tristate(s).
+Unit <Register> synthesized.
+
+Synthesizing Unit <RegPC>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\RegPC.v".
+    Found 10-bit register for signal <R>.
+    Found 1-bit register for signal <ofBit>.
+    Found 11-bit adder for signal <n0040> created at line 48.
+    Found 1-bit tristate buffer for signal <Rdirect<9>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<8>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<7>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<6>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<5>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<4>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<3>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<2>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<1>> created at line 33
+    Found 1-bit tristate buffer for signal <Rdirect<0>> created at line 33
+    Found 1-bit tristate buffer for signal <Rout<9>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<8>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<7>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<6>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<5>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<4>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<3>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<2>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<1>> created at line 34
+    Found 1-bit tristate buffer for signal <Rout<0>> created at line 34
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  11 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred  20 Tristate(s).
+Unit <RegPC> synthesized.
+
+Synthesizing Unit <InstructionnReg>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\InstructionnReg.v".
+    Found 10-bit register for signal <R>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+Unit <InstructionnReg> synthesized.
+
+Synthesizing Unit <DR>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\DR.v".
+WARNING:Xst:647 - Input <Rin<19:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 20-bit register for signal <R>.
+    Found 1-bit tristate buffer for signal <Rout<19>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<18>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<17>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<16>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<15>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<14>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<13>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<12>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<11>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<10>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<9>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<8>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<7>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<6>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<5>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<4>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<3>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<2>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<1>> created at line 26
+    Found 1-bit tristate buffer for signal <Rout<0>> created at line 26
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred  20 Tristate(s).
+Unit <DR> synthesized.
+
+Synthesizing Unit <Counter>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Counter.v".
+    Found 4-bit register for signal <out_reg>.
+    Found 4-bit adder for signal <out_reg[3]_GND_94_o_add_2_OUT> created at line 37.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <Counter> synthesized.
+
+Synthesizing Unit <Memory>.
+    Related source file is "C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\Memory.v".
+WARNING:Xst:647 - Input <Address<19:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <ram>, simulation mismatch.
+    Found 21504x10-bit single-port RAM <Mram_ram> for signal <ram>.
+    Found 1-bit register for signal <RoW_clk_DFF_84>.
+    Found 10-bit register for signal <Z_14_o_dff_4_OUT>.
+    Found 1-bit tristate buffer for signal <Data_out<9>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<8>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<7>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<6>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<5>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<4>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<3>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<2>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<1>> created at line 45
+    Found 1-bit tristate buffer for signal <Data_out<0>> created at line 45
+    Summary:
+	inferred   1 RAM(s).
+	inferred  11 D-type flip-flop(s).
+	inferred  10 Tristate(s).
+Unit <Memory> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 21504x10-bit single-port RAM                          : 1
+ 32x24-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 12
+ 11-bit adder                                          : 4
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 20-bit addsub                                         : 1
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 3
+# Registers                                            : 33
+ 1-bit register                                        : 12
+ 10-bit register                                       : 6
+ 2-bit register                                        : 1
+ 20-bit register                                       : 4
+ 24-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 3
+ 8-bit register                                        : 4
+# Comparators                                          : 2
+ 20-bit comparator greater                             : 2
+# Multiplexers                                         : 65
+ 1-bit 2-to-1 multiplexer                              : 15
+ 10-bit 2-to-1 multiplexer                             : 5
+ 2-bit 2-to-1 multiplexer                              : 1
+ 20-bit 2-to-1 multiplexer                             : 22
+ 24-bit 13-to-1 multiplexer                            : 1
+ 24-bit 2-to-1 multiplexer                             : 2
+ 3-bit 2-to-1 multiplexer                              : 2
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 3
+# Tristates                                            : 150
+ 1-bit tristate buffer                                 : 150
+# FSMs                                                 : 3
+# Xors                                                 : 1
+ 20-bit xor2                                           : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Counter>.
+The following registers are absorbed into counter <out_reg>: 1 register on signal <out_reg>.
+Unit <Counter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Memory>.
+INFO:Xst:3226 - The RAM <Mram_ram> will be implemented as a BLOCK RAM, absorbing the following register(s): <Data_out>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 21504-word x 10-bit                 |          |
+    |     mode           | read-first                          |          |
+    |     clkA           | connected to signal <clk>           | fall     |
+    |     weA            | connected to signal <RoW>           | high     |
+    |     addrA          | connected to signal <Address>       |          |
+    |     diA            | connected to signal <DataIn>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 21504-word x 10-bit                 |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <Address>       |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Memory> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ProcessorCore>.
+INFO:Xst:3231 - The small RAM <Mram__n0202> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 24-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <IRout<4:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ProcessorCore> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_rx>.
+The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
+Unit <uart_rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <uart_tx>.
+The following registers are absorbed into counter <n_reg>: 1 register on signal <n_reg>.
+Unit <uart_tx> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 21504x10-bit dual-port block RAM                      : 1
+ 32x24-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 9
+ 11-bit adder                                          : 4
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 1
+ 20-bit addsub                                         : 1
+ 4-bit adder                                           : 2
+# Counters                                             : 3
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 208
+ Flip-Flops                                            : 208
+# Comparators                                          : 2
+ 20-bit comparator greater                             : 2
+# Multiplexers                                         : 62
+ 1-bit 2-to-1 multiplexer                              : 15
+ 10-bit 2-to-1 multiplexer                             : 5
+ 20-bit 2-to-1 multiplexer                             : 22
+ 24-bit 13-to-1 multiplexer                            : 1
+ 24-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 4-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 3
+# Xors                                                 : 1
+ 20-bit xor2                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state_reg[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <rcx/FSM_1> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <uut/FSM_2> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 11
+ 11    | 10
+-------------------
+WARNING:Xst:2677 - Node <Controller_22> of sequential type is unconnected in block <ProcessorCore>.
+WARNING:Xst:1293 - FF/Latch <R_10> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_11> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_12> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_13> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_14> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_15> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_16> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_17> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_18> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <R_19> has a constant value of 0 in block <DR>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <led_2> in Unit <TopModule> is equivalent to the following FF/Latch, which will be removed : <led_5> 
+INFO:Xst:2261 - The FF/Latch <led_0> in Unit <TopModule> is equivalent to the following FF/Latch, which will be removed : <led_7> 
+INFO:Xst:2261 - The FF/Latch <led_1> in Unit <TopModule> is equivalent to the following FF/Latch, which will be removed : <led_6> 
+INFO:Xst:2261 - The FF/Latch <led_3> in Unit <TopModule> is equivalent to the following FF/Latch, which will be removed : <led_4> 
+WARNING:Xst:2042 - Unit Memory: 10 internal tristates are replaced by logic (pull-up yes): Data_out<0>, Data_out<1>, Data_out<2>, Data_out<3>, Data_out<4>, Data_out<5>, Data_out<6>, Data_out<7>, Data_out<8>, Data_out<9>.
+WARNING:Xst:2042 - Unit ALU: 20 internal tristates are replaced by logic (pull-up yes): OutputBus<0>, OutputBus<10>, OutputBus<11>, OutputBus<12>, OutputBus<13>, OutputBus<14>, OutputBus<15>, OutputBus<16>, OutputBus<17>, OutputBus<18>, OutputBus<19>, OutputBus<1>, OutputBus<2>, OutputBus<3>, OutputBus<4>, OutputBus<5>, OutputBus<6>, OutputBus<7>, OutputBus<8>, OutputBus<9>.
+WARNING:Xst:2042 - Unit RegPC: 20 internal tristates are replaced by logic (pull-up yes): Rdirect<0>, Rdirect<1>, Rdirect<2>, Rdirect<3>, Rdirect<4>, Rdirect<5>, Rdirect<6>, Rdirect<7>, Rdirect<8>, Rdirect<9>, Rout<0>, Rout<1>, Rout<2>, Rout<3>, Rout<4>, Rout<5>, Rout<6>, Rout<7>, Rout<8>, Rout<9>.
+WARNING:Xst:2042 - Unit Register: 20 internal tristates are replaced by logic (pull-up yes): Rout<0>, Rout<10>, Rout<11>, Rout<12>, Rout<13>, Rout<14>, Rout<15>, Rout<16>, Rout<17>, Rout<18>, Rout<19>, Rout<1>, Rout<2>, Rout<3>, Rout<4>, Rout<5>, Rout<6>, Rout<7>, Rout<8>, Rout<9>.
+WARNING:Xst:2042 - Unit DR: 20 internal tristates are replaced by logic (pull-up yes): Rout<0>, Rout<10>, Rout<11>, Rout<12>, Rout<13>, Rout<14>, Rout<15>, Rout<16>, Rout<17>, Rout<18>, Rout<19>, Rout<1>, Rout<2>, Rout<3>, Rout<4>, Rout<5>, Rout<6>, Rout<7>, Rout<8>, Rout<9>.
+WARNING:Xst:2677 - Node <MARH/ofBit> of sequential type is unconnected in block <ProcessorCore>.
+WARNING:Xst:2677 - Node <PCH/ofBit> of sequential type is unconnected in block <ProcessorCore>.
+
+Optimizing unit <InstructionnReg> ...
+
+Optimizing unit <RegEnWrite> ...
+
+Optimizing unit <TopModule> ...
+
+Optimizing unit <uart_rx> ...
+
+Optimizing unit <uart_tx> ...
+
+Optimizing unit <ProcessorCore> ...
+WARNING:Xst:1293 - FF/Latch <Controller_1> has a constant value of 0 in block <ProcessorCore>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Controller_15> has a constant value of 0 in block <ProcessorCore>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Controller_17> has a constant value of 0 in block <ProcessorCore>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <ALU> ...
+
+Optimizing unit <Memory> ...
+INFO:Xst:2261 - The FF/Latch <tx_start> in Unit <TopModule> is equivalent to the following FF/Latch, which will be removed : <state_reg_FSM_FFd1> 
+INFO:Xst:2261 - The FF/Latch <ProsStart> in Unit <TopModule> is equivalent to the following FF/Latch, which will be removed : <led_3> 
+INFO:Xst:3203 - The FF/Latch <ProsStart> in Unit <TopModule> is the opposite to the following FF/Latch, which will be removed : <RoW2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TopModule, actual ratio is 2.
+FlipFlop processor/Controller_20 has been replicated 1 time(s)
+FlipFlop processor/IR/R_0 has been replicated 1 time(s)
+FlipFlop processor/IR/R_1 has been replicated 1 time(s)
+FlipFlop processor/IR/R_2 has been replicated 1 time(s)
+FlipFlop processor/IR/R_3 has been replicated 1 time(s)
+FlipFlop processor/IR/R_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 208
+ Flip-Flops                                            : 208
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : TopModule.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 595
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 19
+#      LUT2                        : 24
+#      LUT3                        : 60
+#      LUT4                        : 67
+#      LUT5                        : 78
+#      LUT6                        : 243
+#      MUXCY                       : 38
+#      MUXF7                       : 18
+#      VCC                         : 1
+#      XORCY                       : 40
+# FlipFlops/Latches                : 208
+#      FD                          : 2
+#      FDC                         : 14
+#      FDCE                        : 22
+#      FDE                         : 29
+#      FDE_1                       : 107
+#      FDP                         : 1
+#      FDR                         : 5
+#      FDRE                        : 27
+#      FDSE                        : 1
+# RAMS                             : 15
+#      RAMB16BWER                  : 15
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 2
+#      OBUF                        : 9
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             208  out of  54576     0%  
+ Number of Slice LUTs:                  497  out of  27288     1%  
+    Number used as Logic:               497  out of  27288     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    525
+   Number with an unused Flip Flop:     317  out of    525    60%  
+   Number with an unused LUT:            28  out of    525     5%  
+   Number of fully used LUT-FF pairs:   180  out of    525    34%  
+   Number of unique control sets:        25
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    218     5%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               15  out of    116    12%  
+    Number using Block RAM only:         15
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 238   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 13.312ns (Maximum Frequency: 75.122MHz)
+   Minimum input arrival time before clock: 4.895ns
+   Maximum output required time after clock: 3.975ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 13.312ns (frequency: 75.122MHz)
+  Total number of paths / destination ports: 41811 / 887
+-------------------------------------------------------------------------
+Delay:               6.656ns (Levels of Logic = 6)
+  Source:            processor/IR/R_5 (FF)
+  Destination:       processor/Controller_0 (FF)
+  Source Clock:      clk falling
+  Destination Clock: clk rising
+
+  Data Path: processor/IR/R_5 to processor/Controller_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            5   0.447   1.059  processor/IR/R_5 (processor/IR/R_5)
+     LUT5:I0->O            2   0.203   0.617  processor/_n0203<9>1_2 (processor/_n0203<9>11)
+     LUT5:I4->O           15   0.205   1.086  processor/IRout[9]_GND_6_o_equal_111_o<9>11 (processor/IRout[9]_GND_6_o_equal_111_o<9>1)
+     LUT6:I4->O           10   0.203   0.857  processor/_n02401 (processor/_n0240)
+     LUT6:I5->O            1   0.205   0.684  processor/Mmux_CounterOut[3]_PWR_5_o_mux_119_OUT116 (processor/Mmux_CounterOut[3]_PWR_5_o_mux_119_OUT19)
+     LUT6:I4->O            1   0.203   0.580  processor/Mmux_CounterOut[3]_PWR_5_o_mux_119_OUT117 (processor/Mmux_CounterOut[3]_PWR_5_o_mux_119_OUT110)
+     LUT5:I4->O            1   0.205   0.000  processor/Mmux_CounterOut[3]_PWR_5_o_mux_119_OUT118 (processor/CounterOut[3]_PWR_5_o_mux_119_OUT<0>)
+     FDE:D                     0.102          processor/Controller_0
+    ----------------------------------------
+    Total                      6.656ns (1.773ns logic, 4.883ns route)
+                                       (26.6% logic, 73.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 123 / 122
+-------------------------------------------------------------------------
+Offset:              4.895ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       processor/Controller_23 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Reset to processor/Controller_23
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            89   1.222   2.033  Reset_IBUF (Reset_IBUF)
+     LUT3:I0->O           21   0.205   1.113  processor/_n0214_inv1 (processor/_n0214_inv)
+     FDE:CE                    0.322          processor/Controller_0
+    ----------------------------------------
+    Total                      4.895ns (1.749ns logic, 3.146ns route)
+                                       (35.7% logic, 64.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              3.975ns (Levels of Logic = 1)
+  Source:            ProsStart (FF)
+  Destination:       led<4> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: ProsStart to led<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.447   0.957  ProsStart (ProsStart)
+     OBUF:I->O                 2.571          led_4_OBUF (led<4>)
+    ----------------------------------------
+    Total                      3.975ns (3.018ns logic, 0.957ns route)
+                                       (75.9% logic, 24.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    7.284|    6.656|    6.298|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 25.00 secs
+Total CPU time to Xst completion: 25.26 secs
+ 
+--> 
+
+Total memory usage is 296080 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

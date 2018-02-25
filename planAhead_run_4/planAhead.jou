@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Wed Aug 03 00:19:08 2016
+# Process ID: 12640
+# Log file: C:/Users/Chani/Desktop/Processor_first_update/Processor_first_update/planAhead_run_4/planAhead.log
+# Journal file: C:/Users/Chani/Desktop/Processor_first_update/Processor_first_update/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Chani/Desktop/Processor_first_update/Processor_first_update/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin C14 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin A16 [get_ports rx]
+endgroup

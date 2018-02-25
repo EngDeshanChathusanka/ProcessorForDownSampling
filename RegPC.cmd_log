@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.xst" -ofn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 RegPC.ngc RegPC.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RegPC_map.ncd RegPC.ngd RegPC.pcf 
+par -w -intstyle ise -ol high -mt off RegPC_map.ncd RegPC.ncd RegPC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RegPC.twx RegPC.ncd -o RegPC.twr RegPC.pcf 
+xst -intstyle ise -ifn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.xst" -ofn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 RegPC.ngc RegPC.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RegPC_map.ncd RegPC.ngd RegPC.pcf 
+par -w -intstyle ise -ol high -mt off RegPC_map.ncd RegPC.ncd RegPC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RegPC.twx RegPC.ncd -o RegPC.twr RegPC.pcf 
+xst -intstyle ise -ifn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.xst" -ofn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 RegPC.ngc RegPC.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RegPC_map.ncd RegPC.ngd RegPC.pcf 
+par -w -intstyle ise -ol high -mt off RegPC_map.ncd RegPC.ncd RegPC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RegPC.twx RegPC.ncd -o RegPC.twr RegPC.pcf 
+xst -intstyle ise -ifn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.xst" -ofn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 RegPC.ngc RegPC.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RegPC_map.ncd RegPC.ngd RegPC.pcf 
+par -w -intstyle ise -ol high -mt off RegPC_map.ncd RegPC.ncd RegPC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RegPC.twx RegPC.ncd -o RegPC.twr RegPC.pcf 
+xst -intstyle ise -ifn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.xst" -ofn "C:/Users/Chani/Desktop/backup1/Processor/RegPC.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx45-csg324-3 RegPC.ngc RegPC.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o RegPC_map.ncd RegPC.ngd RegPC.pcf 
+par -w -intstyle ise -ol high -mt off RegPC_map.ncd RegPC.ncd RegPC.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml RegPC.twx RegPC.ncd -o RegPC.twr RegPC.pcf 

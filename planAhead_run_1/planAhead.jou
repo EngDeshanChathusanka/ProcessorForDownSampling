@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.5 (64-bit)
+# Build 247527 by xbuild on Mon Mar 25 17:13:07 MDT 2013
+# Start of session at: Thu Jul 28 15:48:56 2016
+# Process ID: 10232
+# Log file: C:/Users/Chani/Desktop/backup1/Processor/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Chani/Desktop/backup1/Processor/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Chani/Desktop/backup1/Processor/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS25 [get_ports [list clk]]
+startgroup
+set_property package_pin L15 [get_ports clk]
+endgroup
+set_property is_loc_fixed false [get_ports [list  clk]]
+save_constraints

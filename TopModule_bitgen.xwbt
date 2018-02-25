@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\TopModule.ncd
+OUTFILE=C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update\TopModule.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\Chani\Desktop\Processor_first_update\Processor_first_update
+LICENSE=WebPack
+USER_INFO=__0_0_0
